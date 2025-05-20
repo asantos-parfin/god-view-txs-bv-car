@@ -1,19 +1,21 @@
+import _ from "lodash";
 import { decodeInput, decodeInputHandler } from "../contracts";
-import { JS_LOG_SAMELINE } from "../js";
+import { JS_LOG_ALLOWED, JS_LOG_SAMELINE } from "../js";
 import { IGodTx, IContract, IGodTxAndContract } from "../types";
 
 export function godTxsFilterKnownContracts(args: {
   txs: IGodTx[], 
   contracts: IContract[]
 }){
+  const startTime = process.hrtime();
   const { txs, contracts } = args;
   const dict : Map<string, IGodTxAndContract> = new Map();
   
-  console.log(`[god-view-parser] reading god-view txs ${txs.length}... `)
+  JS_LOG_ALLOWED() && console.log(`[god-view-parser] reading god-view txs ${txs.length}... `)
   for(let i=0; i<txs.length; i++){
     const tx = txs[i];
     // process.stdout.write(`\r[god-view-parser] parsing tx ${i+1} > ${tx.messageId}...`)
-    JS_LOG_SAMELINE(`[god-view-parser] parsing tx ${i+1} > ${tx.messageId}...`)
+    JS_LOG_ALLOWED() && JS_LOG_SAMELINE(`[god-view-parser] parsing tx ${i+1} > ${tx.messageId}...`)
 
     // get the address related with god tx...
     const tSourceAddr = tx.sourceAddress?.toLowerCase().trim();
@@ -21,7 +23,7 @@ export function godTxsFilterKnownContracts(args: {
     const tResourceId = tx.resourceIds?.map(addr => addr.toLowerCase().trim());
 
     const tSourceChainId = tx.sourceChainId.toString();
-    const tDestinationChainIds = tx.destinationChainIds.map(s => s.toLowerCase().trim())
+    const tDestinationChainIds = tx.destinationChainIds?.map(s => s.toLowerCase().trim())
 
     // wrapped god tx identify if the contract is into god view tx....
     const wrappedTx = {
@@ -38,7 +40,7 @@ export function godTxsFilterKnownContracts(args: {
       const cChainId = contract.chainId.toString();
       const cAddr = contract.addr?.toLowerCase().trim();
       const cResId = contract.resourceId?.toLowerCase().trim().substring(2)
-      const handledContract = contract // _.clone(_.omit(contract, "abi"))
+      const handledContract = _.clone(_.omit(contract, "abi"))
 
       // check source addr
       if(tSourceAddr == cAddr
@@ -46,7 +48,7 @@ export function godTxsFilterKnownContracts(args: {
       ) wrappedTx.contract.sourceAddress = handledContract;
 
       // check dest addr
-      tDestinationAddr.forEach(tDestAddr => {
+      tDestinationAddr?.forEach(tDestAddr => {
         if(
           tDestAddr == cAddr
           && tDestinationChainIds.includes(cChainId)
@@ -55,7 +57,7 @@ export function godTxsFilterKnownContracts(args: {
       });
 
       // check resId
-      tResourceId.forEach(tResId => {
+      tResourceId?.forEach(tResId => {
         if(
           tResId == cResId
           && (
@@ -93,6 +95,11 @@ export function godTxsFilterKnownContracts(args: {
       dict.set(tx.messageId, wrappedTx);
     })())
   }
+  const lst = Array.from(dict.values());
 
-  return dict;
+  const end = process.hrtime(startTime)
+  const milliseconds = Math.round((end[0] * 1000) + (end[1] / 1000000))
+  console.log(`[god-view/parser] parsed ${lst.length} items in`, milliseconds, "ms")
+  
+  return {dict, lst};
 }

@@ -4,23 +4,30 @@
   "main": "index.js",
   "scripts": {
     "test": "ts-node src/test.ts",
-    "start": "tsx src/start.ts"
+    "dev": "cross-env NOLOG=1 nodemon --watch src --exec ts-node src/start.ts",
+    "start": "cross-env NOLOG=1 tsx src/start.ts",
+    "docker": "docker build -t god-view-txs-bv-car . && docker run --rm -p 8888:8888 --name god-view-txs-bv-car-container god-view-txs-bv-car "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@opensearch-project/opensearch": "^3.5.1",
-    "@types/axios": "^0.14.4",
-    "@types/lodash": "^4.17.16",
-    "@types/node": "^22.15.18",
     "axios": "^1.9.0",
     "dotenv": "^16.5.0",
     "ethers": "^6.14.1",
+    "express": "^5.1.0",
     "lodash": "^4.17.21",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.4",
+    "@types/express": "^5.0.2",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.15.18",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
-    "tsx": "^4.19.4",
     "typescript": "^5.8.3"
   }
 }

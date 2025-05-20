@@ -37,7 +37,7 @@ export interface IGodTx {
     createdAt: string;
 }
 
-export type TDecodedInputArgs = {
+export type TDecodedInputHandled = {
   argsRaw: string, argsTxt: string, argsObj: any, methodSignature: string
 }
 

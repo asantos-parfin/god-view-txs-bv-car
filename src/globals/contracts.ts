@@ -1,7 +1,7 @@
 import { Block, Interface, isHexString, TransactionDescription, } from "ethers";
 import { JS_JSON_TRANSFORMER_BIGINT } from "./js";
 import { storageGet, EFiles } from "./storage";
-import { IContract } from "./types";
+import { IContract, TDecodedInputHandled } from "./types";
 
 //#region [App Contracts]
 export async function bvContracts() {
@@ -10,10 +10,6 @@ export async function bvContracts() {
 //#endregion
 
 //#region [Payload Decode]
-type TDecodedInputHandled = {
-  argsRaw: string, argsTxt: string, argsObj: any, methodSignature: string
-}
-
 export const decodeInput = (input: string, abi: string) => {
   const iface = new Interface(abi);
   return iface.parseTransaction({
