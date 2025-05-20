@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DEBUG",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
+
+      // single file (npx hardhat run $file):
+      // "args": ["scripts/use-case/1.ifs.operation.request.ts"],
+
+    // editor focus (F5 on editor file):
+    "args": ["${file}"],
+      
+      // test mocha (npx hardhat test --grep "[describe] [it]")
+      // "program": "${workspaceFolder}/node_modules/.bin/hardhat",
+      // "args": ["test", "--grep", "Operation it should settle operation"],
+      
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    }
+  ]
+}
