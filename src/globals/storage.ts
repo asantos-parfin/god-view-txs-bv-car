@@ -4,8 +4,8 @@ const BASE_DIR = "./data/";
 
 export enum EFiles {
   SAMPLE = "sample/sample2.json",
-  CONTRACTS = "bv-flow/contracts-deployed.json",
-  OUTPUT = "output-god-view-txs-bv-car.json",
+  CONTRACTS = "bv-car/contracts-deployed.json",
+  OUTPUT = "output.json",
 }
 
 export async function storageGet<T=any>(file: string|EFiles, defaultValue?:any) {

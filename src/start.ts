@@ -1,8 +1,5 @@
 import express from "express";
-import dotenv from 'dotenv';
-import { routes } from "./http/routes";
-
-dotenv.config();
+import { routes } from "./server/routes";
 
 //>npx nodemon --watch src --exec tsx src/start.ts
 const app = express();

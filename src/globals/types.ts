@@ -41,24 +41,7 @@ export type TDecodedInputHandled = {
   argsRaw: string, argsTxt: string, argsObj: any, methodSignature: string
 }
 
-// export interface IGodTxAndContract {
-//   tx: IGodTx,
-//   contract: {
-//     sourceAddress: IContract|null,
-//     destinationAddresses:(IContract|null)[],
-//     resourceIds: (IContract|null)[],
-//   },
-//   payload?: {
-//     signature: string
-//     decodedEthers: TransactionDescription,
-//     decodedArgs: TDecodedInputArgs,
-//   }[],
-
-// }
-
-
-
-export interface IGodTxAndContract {
+export interface IGodTxWrapped {
   tx: IGodTx,
   contract: {
     sourceAddress: IContract|null,
@@ -66,6 +49,7 @@ export interface IGodTxAndContract {
     resourceIds: (IContract|null)[],
   },
   payload?: {
+    selector: string
     signature: string
     args: string
   },

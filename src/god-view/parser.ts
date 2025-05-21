@@ -1,15 +1,23 @@
 import _ from "lodash";
-import { decodeInput, decodeInputHandler } from "../contracts";
-import { JS_LOG_ALLOWED, JS_LOG_SAMELINE } from "../js";
-import { IGodTx, IContract, IGodTxAndContract } from "../types";
+import { decodeInput, decodeInputHandler } from "../globals/contracts";
+import { JS_LOG_ALLOWED, JS_LOG_SAMELINE } from "../globals/js";
+import { IGodTx, IContract, IGodTxWrapped } from "../globals/types";
 
-export function godTxsFilterKnownContracts(args: {
+/**
+ * Read the god-view (governance-api) response,
+ * search by known contracts through source, destination and resourceId fields,
+ * decode the payloads (if exists and contract is founded)
+ * wrap the tx god-view object into a wrapped IGodTxWrapped object.
+ * 
+ * @returns An object with a 'dict : Map<msgId, IGodTxWrapped>' and 'lst : IGodTxWrapped[]'.
+ */
+export function godViewParseResult(args: {
   txs: IGodTx[], 
   contracts: IContract[]
 }){
   const startTime = process.hrtime();
   const { txs, contracts } = args;
-  const dict : Map<string, IGodTxAndContract> = new Map();
+  const dict : Map<string, IGodTxWrapped> = new Map();
   
   JS_LOG_ALLOWED() && console.log(`[god-view-parser] reading god-view txs ${txs.length}... `)
   for(let i=0; i<txs.length; i++){
@@ -33,7 +41,7 @@ export function godTxsFilterKnownContracts(args: {
         destinationAddresses: [],
         resourceIds: [],
       }
-    } as IGodTxAndContract;
+    } as IGodTxWrapped;
     
     // search for known contract that matchs with tx addresses related...
     contracts.forEach(contract => (async () => {
@@ -80,6 +88,7 @@ export function godTxsFilterKnownContracts(args: {
           if(inputDecoded){
             const inputDecodedHandled = decodeInputHandler(inputDecoded)
             if(inputDecoded)wrappedTx.payload = { 
+              selector: inputDecoded.selector,
               signature: inputDecoded.signature,
               args: inputDecodedHandled.methodSignature
             } 
@@ -99,7 +108,7 @@ export function godTxsFilterKnownContracts(args: {
 
   const end = process.hrtime(startTime)
   const milliseconds = Math.round((end[0] * 1000) + (end[1] / 1000000))
-  console.log(`[god-view/parser] parsed ${lst.length} items in`, milliseconds, "ms")
+  console.log(`[god-view/parser] parsed/wrapped ${lst.length} txs in`, milliseconds, "ms")
   
   return {dict, lst};
 }

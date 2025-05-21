@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { bvContracts } from "./globals/contracts";
-import { godTxsFetcher } from "./globals/god-view/api";
-import { godTxsFilterKnownContracts } from "./globals/god-view/parser";
+import { godViewGet } from "./god-view/api";
+import { godViewParseResult } from "./god-view/parser";
 import { storagePut, EFiles } from "./globals/storage";
 
 //#region [Main]
@@ -17,20 +17,23 @@ import { storagePut, EFiles } from "./globals/storage";
 
   // god txs
   console.info(`\n[INFO] FETCING GOD-VIEW TXS...`)
-  const txsGod = await godTxsFetcher({proxyQueryString: undefined, local:true})
+  const txsGod = await godViewGet({
+    local: true,
+  })
   console.info(`> TXS GOD LIST LENGTH =`, txsGod.data.length)
 
   // filter god txs msgs from known contracts
   console.info(`\n[INFO] STARTING PARSE GOD-VIEW TXS....`)
-  const {dict, lst} = godTxsFilterKnownContracts({
+  const {dict, lst} = godViewParseResult({
     contracts: cs, 
     txs: txsGod.data
   });
   console.info(`\n> TXS CONTRACTS KNOWN FOUNDED =`, dict.size);
   
   // output
+  txsGod.data = lst;
   console.info(`\n[INFO] PARSER FINISHED! WRITING OUTPUT...`)
-  await storagePut(EFiles.OUTPUT, lst);
+  await storagePut(EFiles.OUTPUT, txsGod);
   //#endregion
 
   //#region [output analysis]

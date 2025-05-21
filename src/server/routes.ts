@@ -1,8 +1,8 @@
 import { Application, Request, Response } from "express";
 import { JS_INSPECT, JS_JSON_TRANSFORMER_BIGINT } from "../globals/js";
-import { godTxsFetcher } from "../globals/god-view/api";
+import { godViewGet } from "../god-view/api";
 import { bvContracts } from "../globals/contracts";
-import { godTxsFilterKnownContracts } from "../globals/god-view/parser";
+import { godViewParseResult } from "../god-view/parser";
 
 //#region [Routes]
 export const routes = (app: Application) => {
@@ -19,13 +19,13 @@ function auditTransactions(app: Application) {
     const cs = await bvContracts();
 
     // god-view fetcher
-    const godRes = await godTxsFetcher({ 
+    const godRes = await godViewGet({ 
       proxyQueryString: req.query,
       // local: true
     });
 
     // parser contracts
-    const {dict, lst} = godTxsFilterKnownContracts({
+    const {dict, lst} = godViewParseResult({
       contracts: cs,
       txs: godRes.data,
     });
