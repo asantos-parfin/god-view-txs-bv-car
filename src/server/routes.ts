@@ -1,8 +1,8 @@
 import { Application, Request, Response } from "express";
-import { JS_INSPECT, JS_JSON_TRANSFORMER_BIGINT } from "../globals/js";
+import { JS_JSON_TRANSFORMER_BIGINT } from "../globals/js";
 import { godViewGet } from "../god-view/api";
 import { bvContracts } from "../globals/contracts";
-import { godViewParseResult } from "../god-view/parser";
+import { godViewParserTxs } from "../god-view/parser";
 
 //#region [Routes]
 export const routes = (app: Application) => {
@@ -25,7 +25,7 @@ function auditTransactions(app: Application) {
     });
 
     // parser contracts
-    const {dict, lst} = godViewParseResult({
+    const {dict, lst} = godViewParserTxs({
       contracts: cs,
       txs: godRes.data,
     });

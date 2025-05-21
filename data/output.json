@@ -52,7 +52,7 @@
         ],
         "createdAt": "2025-05-20 17:40:38.446806 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -72,11 +72,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x7ff514ba",
-        "signature": "receiveOperationSettled(string,uint8)",
-        "args": "receiveOperationSettled(1747762414302, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x7ff514ba",
+          "signature": "receiveOperationSettled(string,uint8)",
+          "args": "receiveOperationSettled(1747762414302, 2)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -130,7 +133,7 @@
         ],
         "createdAt": "2025-05-20 17:40:30.253271 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -150,11 +153,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x84c9ebf3",
-        "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
-        "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 1105644871732)"
-      }
+      "payloads": [
+        {
+          "selector": "0x84c9ebf3",
+          "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
+          "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 1105644871732)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -336,7 +342,7 @@
         ],
         "createdAt": "2025-05-20 17:40:13.952233 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -694,7 +700,7 @@
         ],
         "createdAt": "2025-05-20 17:39:08.730927 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800002,
           "name": "[Bank A]OperationManager",
@@ -773,7 +779,7 @@
         ],
         "createdAt": "2025-05-20 17:37:39.144202 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800003,
           "name": "[Bank B]OperationManager",
@@ -799,11 +805,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x195efa4e",
-        "signature": "crossTransferCheck()",
-        "args": ""
-      }
+      "payloads": [
+        {
+          "selector": "0x195efa4e",
+          "signature": "crossTransferCheck()",
+          "args": "",
+          "contract": "[Bank A]CBDC"
+        }
+      ]
     },
     {
       "tx": {
@@ -857,7 +866,7 @@
         ],
         "createdAt": "2025-05-20 17:37:31.03892 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -877,11 +886,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x360d6726",
-        "signature": "receiveSettleStarted(string,uint8)",
-        "args": "receiveSettleStarted(1747762414302, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x360d6726",
+          "signature": "receiveSettleStarted(string,uint8)",
+          "args": "receiveSettleStarted(1747762414302, 2)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -935,7 +947,7 @@
         ],
         "createdAt": "2025-05-20 17:37:14.746875 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -955,11 +967,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1013,7 +1028,7 @@
         ],
         "createdAt": "2025-05-20 17:37:06.635741 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1033,11 +1048,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1091,7 +1109,7 @@
         ],
         "createdAt": "2025-05-20 17:36:42.351087 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1111,11 +1129,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1169,7 +1190,7 @@
         ],
         "createdAt": "2025-05-20 17:36:26.33569 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1189,11 +1210,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762414302, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1247,7 +1271,7 @@
         ],
         "createdAt": "2025-05-20 17:36:18.251581 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1267,11 +1291,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747762414302, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747762414302, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1334,7 +1361,7 @@
         ],
         "createdAt": "2025-05-20 17:36:10.644693 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1421,7 +1448,7 @@
         ],
         "createdAt": "2025-05-20 17:35:46.254625 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1441,11 +1468,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1499,7 +1529,7 @@
         ],
         "createdAt": "2025-05-20 17:35:30.044466 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1519,11 +1549,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1577,7 +1610,7 @@
         ],
         "createdAt": "2025-05-20 17:35:22.045042 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1597,11 +1630,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1655,7 +1691,7 @@
         ],
         "createdAt": "2025-05-20 17:35:07.137952 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1675,11 +1711,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747762414302\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1105644871732\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1734,7 +1773,7 @@
         ],
         "createdAt": "2025-05-20 17:34:16.243113 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1747,11 +1786,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1105644871732)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1105644871732)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -1805,7 +1847,7 @@
         ],
         "createdAt": "2025-05-20 17:30:44.049073 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1825,11 +1867,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762059587, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762059587, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1883,7 +1928,7 @@
         ],
         "createdAt": "2025-05-20 17:30:36.135809 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1903,11 +1948,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747762059587, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747762059587, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -1961,7 +2009,7 @@
         ],
         "createdAt": "2025-05-20 17:30:20.052758 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -1981,11 +2029,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747762059587, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747762059587, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2048,7 +2099,7 @@
         ],
         "createdAt": "2025-05-20 17:30:12.035716 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2135,7 +2186,7 @@
         ],
         "createdAt": "2025-05-20 17:29:39.536623 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2155,11 +2206,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2213,7 +2267,7 @@
         ],
         "createdAt": "2025-05-20 17:29:31.344213 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2233,11 +2287,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2291,7 +2348,7 @@
         ],
         "createdAt": "2025-05-20 17:29:23.247768 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2311,11 +2368,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2369,7 +2429,7 @@
         ],
         "createdAt": "2025-05-20 17:29:07.049723 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2389,11 +2449,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747762059587\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1410598475977\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2448,7 +2511,7 @@
         ],
         "createdAt": "2025-05-20 17:28:22.051204 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2461,11 +2524,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1410598475977)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1410598475977)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -2519,7 +2585,7 @@
         ],
         "createdAt": "2025-05-20 17:25:13.930927 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2539,11 +2605,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761710273, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761710273, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2597,7 +2666,7 @@
         ],
         "createdAt": "2025-05-20 17:24:50.350072 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2617,11 +2686,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747761710273, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747761710273, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2675,7 +2747,7 @@
         ],
         "createdAt": "2025-05-20 17:24:42.746145 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2695,11 +2767,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761710273, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761710273, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2762,7 +2837,7 @@
         ],
         "createdAt": "2025-05-20 17:24:34.740312 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2849,7 +2924,7 @@
         ],
         "createdAt": "2025-05-20 17:24:03.647234 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2869,11 +2944,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -2927,7 +3005,7 @@
         ],
         "createdAt": "2025-05-20 17:23:47.748018 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -2947,11 +3025,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -3005,7 +3086,7 @@
         ],
         "createdAt": "2025-05-20 17:23:39.851909 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3025,11 +3106,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -3083,7 +3167,7 @@
         ],
         "createdAt": "2025-05-20 17:23:27.935649 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3103,11 +3187,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747761710273\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"8217245461147\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -3162,7 +3249,7 @@
         ],
         "createdAt": "2025-05-20 17:22:51.23569 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3175,11 +3262,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 8217245461147)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 8217245461147)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -3361,7 +3451,7 @@
         ],
         "createdAt": "2025-05-20 17:22:43.637859 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3700,7 +3790,7 @@
         ],
         "createdAt": "2025-05-20 17:20:36.038419 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3720,11 +3810,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x195efa4e",
-        "signature": "crossTransferCheck()",
-        "args": ""
-      }
+      "payloads": [
+        {
+          "selector": "0x195efa4e",
+          "signature": "crossTransferCheck()",
+          "args": "",
+          "contract": "[Authority]CBDC"
+        }
+      ]
     },
     {
       "tx": {
@@ -3779,7 +3872,7 @@
         ],
         "createdAt": "2025-05-20 17:20:27.838446 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3792,11 +3885,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1573618247283)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1573618247283)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -3850,7 +3946,7 @@
         ],
         "createdAt": "2025-05-20 17:20:03.555605 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -3870,11 +3966,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x84c9ebf3",
-        "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
-        "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 5173441059147)"
-      }
+      "payloads": [
+        {
+          "selector": "0x84c9ebf3",
+          "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
+          "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 5173441059147)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -3947,7 +4046,7 @@
         ],
         "createdAt": "2025-05-20 17:19:47.538957 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800002,
           "name": "[Bank A]OperationManager",
@@ -4026,7 +4125,7 @@
         ],
         "createdAt": "2025-05-20 17:19:39.442275 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4046,11 +4145,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x7ff514ba",
-        "signature": "receiveOperationSettled(string,uint8)",
-        "args": "receiveOperationSettled(1747761174112, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x7ff514ba",
+          "signature": "receiveOperationSettled(string,uint8)",
+          "args": "receiveOperationSettled(1747761174112, 2)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -4232,7 +4334,7 @@
         ],
         "createdAt": "2025-05-20 17:19:31.538819 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4571,7 +4673,7 @@
         ],
         "createdAt": "2025-05-20 17:17:04.539787 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4591,11 +4693,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x360d6726",
-        "signature": "receiveSettleStarted(string,uint8)",
-        "args": "receiveSettleStarted(1747761174112, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x360d6726",
+          "signature": "receiveSettleStarted(string,uint8)",
+          "args": "receiveSettleStarted(1747761174112, 2)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -4649,7 +4754,7 @@
         ],
         "createdAt": "2025-05-20 17:16:48.351767 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4669,11 +4774,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -4727,7 +4835,7 @@
         ],
         "createdAt": "2025-05-20 17:16:40.344052 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800003,
           "name": "[Bank B]OperationManager",
@@ -4753,11 +4861,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x195efa4e",
-        "signature": "crossTransferCheck()",
-        "args": ""
-      }
+      "payloads": [
+        {
+          "selector": "0x195efa4e",
+          "signature": "crossTransferCheck()",
+          "args": "",
+          "contract": "[Bank A]CBDC"
+        }
+      ]
     },
     {
       "tx": {
@@ -4811,7 +4922,7 @@
         ],
         "createdAt": "2025-05-20 17:16:32.134914 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4831,11 +4942,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -4889,7 +5003,7 @@
         ],
         "createdAt": "2025-05-20 17:16:07.445043 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4909,11 +5023,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -4967,7 +5084,7 @@
         ],
         "createdAt": "2025-05-20 17:15:51.52464 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -4987,11 +5104,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747761174112, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5045,7 +5165,7 @@
         ],
         "createdAt": "2025-05-20 17:15:43.447472 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5065,11 +5185,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747761174112, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747761174112, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5132,7 +5255,7 @@
         ],
         "createdAt": "2025-05-20 17:15:35.351323 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5219,7 +5342,7 @@
         ],
         "createdAt": "2025-05-20 17:15:03.247202 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5239,11 +5362,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5297,7 +5423,7 @@
         ],
         "createdAt": "2025-05-20 17:14:55.250852 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5317,11 +5443,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5375,7 +5504,7 @@
         ],
         "createdAt": "2025-05-20 17:14:39.051657 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5395,11 +5524,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5453,7 +5585,7 @@
         ],
         "createdAt": "2025-05-20 17:14:31.050677 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5473,11 +5605,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747761174112\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"5173441059147\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5532,7 +5667,7 @@
         ],
         "createdAt": "2025-05-20 17:13:40.149515 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5545,11 +5680,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 5173441059147)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 5173441059147)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -5603,7 +5741,7 @@
         ],
         "createdAt": "2025-05-20 17:10:16.84811 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5623,11 +5761,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760838438, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760838438, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5681,7 +5822,7 @@
         ],
         "createdAt": "2025-05-20 17:10:00.659044 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5701,11 +5842,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747760838438, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747760838438, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5759,7 +5903,7 @@
         ],
         "createdAt": "2025-05-20 17:09:52.550548 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5779,11 +5923,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760838438, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760838438, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -5846,7 +5993,7 @@
         ],
         "createdAt": "2025-05-20 17:09:44.446517 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5933,7 +6080,7 @@
         ],
         "createdAt": "2025-05-20 17:09:12.336249 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -5953,11 +6100,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6011,7 +6161,7 @@
         ],
         "createdAt": "2025-05-20 17:09:04.150875 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6031,11 +6181,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6089,7 +6242,7 @@
         ],
         "createdAt": "2025-05-20 17:08:56.144676 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6109,11 +6262,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6167,7 +6323,7 @@
         ],
         "createdAt": "2025-05-20 17:08:40.058454 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6187,11 +6343,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760838438\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"2849339706872\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6246,7 +6405,7 @@
         ],
         "createdAt": "2025-05-20 17:08:07.430914 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6259,11 +6418,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 2849339706872)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 2849339706872)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -6317,7 +6479,7 @@
         ],
         "createdAt": "2025-05-20 17:07:43.044788 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6337,11 +6499,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760648681, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760648681, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6395,7 +6560,7 @@
         ],
         "createdAt": "2025-05-20 17:07:26.648347 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6415,11 +6580,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747760648681, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747760648681, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6473,7 +6641,7 @@
         ],
         "createdAt": "2025-05-20 17:07:18.643623 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6493,11 +6661,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760648681, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760648681, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6560,7 +6731,7 @@
         ],
         "createdAt": "2025-05-20 17:07:10.655849 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6647,7 +6818,7 @@
         ],
         "createdAt": "2025-05-20 17:06:38.334909 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6667,11 +6838,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6725,7 +6899,7 @@
         ],
         "createdAt": "2025-05-20 17:06:30.147057 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6745,11 +6919,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6803,7 +6980,7 @@
         ],
         "createdAt": "2025-05-20 17:06:14.05388 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6823,11 +7000,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6881,7 +7061,7 @@
         ],
         "createdAt": "2025-05-20 17:06:05.950677 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6901,11 +7081,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760648681\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"7115961545292\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -6960,7 +7143,7 @@
         ],
         "createdAt": "2025-05-20 17:05:57.843775 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -6973,11 +7156,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 7115961545292)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 7115961545292)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -7159,7 +7345,7 @@
         ],
         "createdAt": "2025-05-20 17:05:49.75526 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -7498,7 +7684,7 @@
         ],
         "createdAt": "2025-05-20 17:03:22.052706 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -7518,11 +7704,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x195efa4e",
-        "signature": "crossTransferCheck()",
-        "args": ""
-      }
+      "payloads": [
+        {
+          "selector": "0x195efa4e",
+          "signature": "crossTransferCheck()",
+          "args": "",
+          "contract": "[Authority]CBDC"
+        }
+      ]
     },
     {
       "tx": {
@@ -7577,7 +7766,7 @@
         ],
         "createdAt": "2025-05-20 17:02:37.039576 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -7590,11 +7779,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1162775145348)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1162775145348)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -7648,7 +7840,7 @@
         ],
         "createdAt": "2025-05-20 17:01:28.436099 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -7668,11 +7860,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x7ff514ba",
-        "signature": "receiveOperationSettled(string,uint8)",
-        "args": "receiveOperationSettled(1747760063979, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x7ff514ba",
+          "signature": "receiveOperationSettled(string,uint8)",
+          "args": "receiveOperationSettled(1747760063979, 2)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -7726,7 +7921,7 @@
         ],
         "createdAt": "2025-05-20 17:01:12.244015 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -7746,11 +7941,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x84c9ebf3",
-        "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
-        "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 1263677978423)"
-      }
+      "payloads": [
+        {
+          "selector": "0x84c9ebf3",
+          "signature": "receiveCarTransfered(uint256,address,uint256,address,uint256)",
+          "args": "receiveCarTransfered(800002, 0x8Fb09639a67134F992EE127f1dB0F71026260034, 800003, 0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325, 1263677978423)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -7823,7 +8021,7 @@
         ],
         "createdAt": "2025-05-20 17:01:04.234924 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800002,
           "name": "[Bank A]OperationManager",
@@ -8030,7 +8228,7 @@
         ],
         "createdAt": "2025-05-20 17:00:57.025563 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8369,7 +8567,7 @@
         ],
         "createdAt": "2025-05-20 16:58:36.338357 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8389,11 +8587,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x360d6726",
-        "signature": "receiveSettleStarted(string,uint8)",
-        "args": "receiveSettleStarted(1747760063979, 2)"
-      }
+      "payloads": [
+        {
+          "selector": "0x360d6726",
+          "signature": "receiveSettleStarted(string,uint8)",
+          "args": "receiveSettleStarted(1747760063979, 2)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8447,7 +8648,7 @@
         ],
         "createdAt": "2025-05-20 16:58:28.151927 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": {
           "chainId": 800003,
           "name": "[Bank B]OperationManager",
@@ -8473,11 +8674,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x195efa4e",
-        "signature": "crossTransferCheck()",
-        "args": ""
-      }
+      "payloads": [
+        {
+          "selector": "0x195efa4e",
+          "signature": "crossTransferCheck()",
+          "args": "",
+          "contract": "[Bank A]CBDC"
+        }
+      ]
     },
     {
       "tx": {
@@ -8531,7 +8735,7 @@
         ],
         "createdAt": "2025-05-20 16:58:11.933842 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8551,11 +8755,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8609,7 +8816,7 @@
         ],
         "createdAt": "2025-05-20 16:58:03.744096 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8629,11 +8836,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8687,7 +8897,7 @@
         ],
         "createdAt": "2025-05-20 16:57:39.346912 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8707,11 +8917,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8765,7 +8978,7 @@
         ],
         "createdAt": "2025-05-20 16:57:31.243139 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8785,11 +8998,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747760063979, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8843,7 +9059,7 @@
         ],
         "createdAt": "2025-05-20 16:57:15.042901 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -8863,11 +9079,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747760063979, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747760063979, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -8930,7 +9149,7 @@
         ],
         "createdAt": "2025-05-20 16:57:06.851721 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9017,7 +9236,7 @@
         ],
         "createdAt": "2025-05-20 16:56:42.443267 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9037,11 +9256,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9095,7 +9317,7 @@
         ],
         "createdAt": "2025-05-20 16:56:34.436066 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9115,11 +9337,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9173,7 +9398,7 @@
         ],
         "createdAt": "2025-05-20 16:56:10.03966 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9193,11 +9418,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9251,7 +9479,7 @@
         ],
         "createdAt": "2025-05-20 16:55:58.235689 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9271,11 +9499,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747760063979\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1263677978423\", \"1\"], 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9330,7 +9561,7 @@
         ],
         "createdAt": "2025-05-20 16:55:07.14456 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9343,11 +9574,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xc0251d55",
-        "signature": "receiveTeleportAtomic(address,uint256)",
-        "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1263677978423)"
-      }
+      "payloads": [
+        {
+          "selector": "0xc0251d55",
+          "signature": "receiveTeleportAtomic(address,uint256)",
+          "args": "receiveTeleportAtomic(0x8Fb09639a67134F992EE127f1dB0F71026260034, 1263677978423)",
+          "contract": "[Authority]WCarToken"
+        }
+      ]
     },
     {
       "tx": {
@@ -9401,7 +9635,7 @@
         ],
         "createdAt": "2025-05-20 16:54:18.330925 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9421,11 +9655,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747759853689, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747759853689, 0)",
+          "contract": "[Bank B]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9479,7 +9716,7 @@
         ],
         "createdAt": "2025-05-20 16:54:02.145138 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9499,11 +9736,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x927d9ab4",
-        "signature": "receiveOperationValidation(string,uint8,uint8)",
-        "args": "receiveOperationValidation(1747759853689, 6, 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x927d9ab4",
+          "signature": "receiveOperationValidation(string,uint8,uint8)",
+          "args": "receiveOperationValidation(1747759853689, 6, 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9557,7 +9797,7 @@
         ],
         "createdAt": "2025-05-20 16:53:54.055348 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9577,11 +9817,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0xd8a5a61d",
-        "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
-        "args": "receiveReadyToDVPSettlementConfirmation(1747759853689, 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0xd8a5a61d",
+          "signature": "receiveReadyToDVPSettlementConfirmation(string,uint8)",
+          "args": "receiveReadyToDVPSettlementConfirmation(1747759853689, 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9644,7 +9887,7 @@
         ],
         "createdAt": "2025-05-20 16:53:46.026943 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9731,7 +9974,7 @@
         ],
         "createdAt": "2025-05-20 16:53:21.559159 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9751,11 +9994,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x564c4660",
-        "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveValidateOperationRequest([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x564c4660",
+          "signature": "receiveValidateOperationRequest((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveValidateOperationRequest([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9809,7 +10055,7 @@
         ],
         "createdAt": "2025-05-20 16:53:13.463489 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9829,11 +10075,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"3\"], 1)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"3\"], 1)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     },
     {
       "tx": {
@@ -9887,7 +10136,7 @@
         ],
         "createdAt": "2025-05-20 16:52:49.334929 +0000 UTC"
       },
-      "contract": {
+      "contracts": {
         "sourceAddress": null,
         "destinationAddresses": [],
         "resourceIds": [
@@ -9907,11 +10156,14 @@
           }
         ]
       },
-      "payload": {
-        "selector": "0x20406af6",
-        "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
-        "args": "receiveStartOperation([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"1\"], 0)"
-      }
+      "payloads": [
+        {
+          "selector": "0x20406af6",
+          "signature": "receiveStartOperation((string,uint256,uint256,address,address,uint256,uint256,uint8),uint8)",
+          "args": "receiveStartOperation([\"1747759853689\", \"800002\", \"800003\", \"0x8Fb09639a67134F992EE127f1dB0F71026260034\", \"0xF664621DE2669F4ae7Ada3264f992Fd9c9E21325\", \"2000000\", \"1662786129232\", \"1\"], 0)",
+          "contract": "[Bank A]OperationManager"
+        }
+      ]
     }
   ],
   "total": 541,

@@ -43,15 +43,16 @@ export type TDecodedInputHandled = {
 
 export interface IGodTxWrapped {
   tx: IGodTx,
-  contract: {
+  contracts: {
     sourceAddress: IContract|null,
     destinationAddresses:(IContract|null)[],
     resourceIds: (IContract|null)[],
   },
-  payload?: {
+  payloads?: {
     selector: string
     signature: string
     args: string
-  },
+    contract: string
+  }[],
 
 }

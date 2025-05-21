@@ -1,7 +1,7 @@
 import _ from "lodash";
 import { bvContracts } from "./globals/contracts";
 import { godViewGet } from "./god-view/api";
-import { godViewParseResult } from "./god-view/parser";
+import { godViewParserTxs } from "./god-view/parser";
 import { storagePut, EFiles } from "./globals/storage";
 
 //#region [Main]
@@ -24,7 +24,7 @@ import { storagePut, EFiles } from "./globals/storage";
 
   // filter god txs msgs from known contracts
   console.info(`\n[INFO] STARTING PARSE GOD-VIEW TXS....`)
-  const {dict, lst} = godViewParseResult({
+  const {dict, lst} = godViewParserTxs({
     contracts: cs, 
     txs: txsGod.data
   });
@@ -51,18 +51,18 @@ import { storagePut, EFiles } from "./globals/storage";
       txMessageId: tx.tx.messageId,
 
       // resourceId contracts
-      chainId: _.truncate(tx.contract.resourceIds?.map(c => c?.chainId).join(","), {length: 25, omission: "..."}), 
-      contract: _.truncate(tx.contract.resourceIds?.map(c => c?.name).join(","), {length: 25, omission: "..."}),
-      addr: _.truncate(tx.contract.resourceIds?.map(c => c?.addr).join(","), {length: 25, omission: "..."}),
+      chainId: _.truncate(tx.contracts.resourceIds?.map(c => c?.chainId).join(","), {length: 25, omission: "..."}), 
+      contract: _.truncate(tx.contracts.resourceIds?.map(c => c?.name).join(","), {length: 25, omission: "..."}),
+      addr: _.truncate(tx.contracts.resourceIds?.map(c => c?.addr).join(","), {length: 25, omission: "..."}),
 
       // source/dest contracts
-      sourceAddresses: tx.contract.destinationAddresses.length ? _.truncate(tx.contract.destinationAddresses?.map(c => "["+c?.chainId+"]" + c?.name).join(","), {length: 25, omission: "..."}) : undefined,
-      destionationAddress: tx.contract.sourceAddress ? `${tx.contract.sourceAddress?.chainId} ${tx.contract.sourceAddress?.name}` : undefined,
+      sourceAddresses: tx.contracts.destinationAddresses.length ? _.truncate(tx.contracts.destinationAddresses?.map(c => "["+c?.chainId+"]" + c?.name).join(","), {length: 25, omission: "..."}) : undefined,
+      destionationAddress: tx.contracts.sourceAddress ? `${tx.contracts.sourceAddress?.chainId} ${tx.contracts.sourceAddress?.name}` : undefined,
 
       // msg payload
       payload: tx.tx.payloads?.length,
-      payloadDecoded: tx.payload?.args,
-      payloadSignature: tx.payload?.signature,
+      payloadDecoded: tx.payloads?.map(p => p.args).join("|"),
+      payloadSignature: tx.payloads?.map(p => p.selector).join("|"),
     })
   ))
 
