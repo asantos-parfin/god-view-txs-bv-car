@@ -65,20 +65,24 @@ export function godViewParserTxs(args: { txs: IGodTx[]; contracts: IContract[] }
             wrappedTx.contracts.resourceIds.push(handledContract);
         });
 
-        // payload
+        // decode payload
         if (
-          tPayloadsLength && // IF payload exists...
-          // IF theres any contract related..
-          (wrappedTx.contracts.sourceAddress ||
+          // IF payload exists...
+          tPayloadsLength 
+          // IF theres any contract related founded...
+          && (
+            wrappedTx.contracts.sourceAddress ||
             wrappedTx.contracts.destinationAddresses.length ||
-            wrappedTx.contracts.resourceIds.length)
+            wrappedTx.contracts.resourceIds.length
+          )
         ) {
+          // get abi
           const abi = contract.abi;
 
           wrappedTx.tx.payloads.forEach((payload, idx) => {
+            // try decode payload with current contract
             try {
               payload = "0x" + payload;
-              // try decode payload with current contract
               if (!abi)
                 throw Error(
                   `[ERROR] CONTRACT WITHOUT ABI!!! [${contract.chainId}] ${contract.name} (${contract.addr})`
@@ -88,7 +92,7 @@ export function godViewParserTxs(args: { txs: IGodTx[]; contracts: IContract[] }
                 const inputDecodedHandled = decodeInputHandler(inputDecoded);
                 if (inputDecoded) {
                   // check if payload was not already decoded
-                  if(idx+1 > (wrappedTx.payloads ? wrappedTx.payloads?.length : 0)) {
+                  if (idx + 1 > (wrappedTx.payloads ? wrappedTx.payloads?.length : 0)) {
                     wrappedTx.payloads?.push({
                       selector: inputDecoded.selector,
                       signature: inputDecoded.signature,
@@ -96,7 +100,6 @@ export function godViewParserTxs(args: { txs: IGodTx[]; contracts: IContract[] }
                       contract: contract.name,
                     });
                   }
-
                 }
               }
             } catch (e) {
